@@ -1,4 +1,6 @@
 StudentDBMS::Application.routes.draw do
+  get "cv/mycv"
+
   resources :courses
 
 

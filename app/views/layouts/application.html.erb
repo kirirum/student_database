@@ -9,7 +9,6 @@
 
   <%#Good for Search Engine %>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 <body>
 
@@ -22,9 +21,10 @@
          <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">StudentDBMS</a>
-        <div class="nav-collapse">
+        <a class="brand" href="#">CV</a>
+           <div class="nav-collapse">
         <ul class="nav">
+          <li><%= link_to "MyCV", cv_mycv_path %></li>
           <li><%= link_to "Student", students_path %></li>
           <li><%= link_to "Instructor", instructors_path %></li>
           <li><%= link_to "Course", courses_path %></li>
@@ -33,23 +33,24 @@
     </div>
   </div>
 </div>
-<!--
-  Display error of validation
--->
-
-<div class="container">
-  
-  <div class="row">
-       <div class="span12">
-       	 <%= yield %>
-       </div>
+<div class="container-fluid">  
+  <section class="row-fluid">
+       <article class="span12"> <%= yield %> </article>
       <!--   <div class="span3">
           <h2> Hello World</h2>
         </div> -->
-	  
+      </section>
+
+
+<footer class="span9 offset3"> Copy right &copy; 2013 Design by phirum. </footer>
+ <br />
+ <br />
+ <br />
+ <br />
+
 		  </div>
 </div>
- 
+
 
 </body>
 </html>
