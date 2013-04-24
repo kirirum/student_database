@@ -1,6 +1,6 @@
  <%= simple_form_for @course, :html => { :class => 'form-horizontal' } do |f| %>
   <%= f.input :name %>
-  <%= f.association :Gender,:include_blank => t('.select_student') %>
+  <%= f.association :student,:include_blank => t('.select_student') %>
   <%= f.association :instructor,:include_blank => t('.select_instructor') %>
   <%= f.input :description %>
   <div class="form-actions">
